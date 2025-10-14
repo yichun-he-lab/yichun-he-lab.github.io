@@ -1,0 +1,470 @@
+@media (min-width: 992px) {
+   .navbar-collapse {
+       display: none !important;
+   }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.chart {
+  position: relative;
+  width: 100%;
+  height: 500px
+}
+
+.smalltxt {
+  font-size: 0.9rem;
+}
+
+.mem-icon {
+  height: 1em;
+}
+
+.navb-icon {
+  height: 3em;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  font-size: 1.2em !important;
+}
+
+.welcomefont {
+  font-size: 1.5em;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.jumbotron {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  margin-bottom: 0 !important;
+}
+
+.jumbotron.h-100 {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.home-image {
+  max-width: 50%;
+  margin: 2rem auto;
+  display: block;
+}
+
+.home-image-right {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.join-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.3rem;
+}
+
+.join-section h3 {
+    margin-bottom: 1rem;
+    color: #0b1c9e;
+}
+
+/* He Lab specific styling */
+.he-lab-primary {
+    color: #0b1c9e;
+}
+
+.he-lab-secondary {
+    color: #e53935;
+}
+
+.he-lab-accent {
+    color: #6ce5dc;
+}
+
+/*
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+/*
+.navbar-default {
+  background-color: #052049;
+  border-color: #668a75;
+}
+
+.navbar-default .navbar-brand {
+  font-family: "Lucida Bright", Georgia, serif;
+
+  color: #f6f6f6;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-text {
+  color: #f6f6f6;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #f6f6f6;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #fdfdfd;
+  background-color: #668a75;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #fdfdfd;
+  background-color: #668a75;
+}
+.navbar-default .navbar-toggle {
+  border-color: #668a75;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #668a75;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f6f6f6;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f6f6f6;
+}
+.navbar-default .navbar-link {
+  color: #f6f6f6;
+}
+.navbar-default .navbar-link:hover {
+  color: #fdfdfd;
+}
+
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f6f6f6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fdfdfd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fdfdfd;
+    background-color: #668a75;
+  }
+}
+*/
+
+/* Publications page styling */
+.publications {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.publications h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.publications h2 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.5rem;
+    color: #333;
+}
+
+.publication-note {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.publication-note.award {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.publication-item {
+    margin-bottom: 0.8rem;
+}
+
+.publication-content {
+    margin-left: 0;
+}
+
+.publication-title {
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: #333;
+}
+
+.publication-title a {
+    color: #F26096;
+    text-decoration: none;
+}
+
+.publication-title a:hover {
+    text-decoration: underline;
+}
+
+.publication-authors {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.publication-authors u {
+    font-weight: normal;
+}
+
+.publication-authors strong {
+    font-weight: bold;
+}
+
+.publication-journal {
+    color: #2774AE;
+    margin-bottom: 0.2rem;
+}
+
+.publication-software, .publication-links {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.publication-software a, .publication-links a {
+    color: #2774AE;
+    text-decoration: none;
+}
+
+.publication-software a:hover, .publication-links a:hover {
+    text-decoration: underline;
+}
+
+.publication-links {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.publication-links a {
+    color: #2774AE;
+    text-decoration: none;
+}
+
+.publication-links a:hover {
+    text-decoration: underline;
+}
+
+/* Remove the negative margin that was causing spacing issues */
+.publication-links [href*="slides"],
+.publication-links [href*="talk"] {
+    margin-left: 0;
+}
+
+/* People page styling */
+.people {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.people h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.people h2 {
+    font-size: 1.6rem;
+    margin: 2rem 0 1.5rem;
+    color: #333;
+}
+
+.people hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.member-profile {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.member-image {
+    flex: 0 0 200px;
+}
+
+.member-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-info h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.member-info h3 {
+    font-size: 1.1rem;
+    margin: 0 0 1rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.member-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 1rem;
+}
+
+.member-info a {
+    color: #2774AE;
+    text-decoration: none;
+}
+
+.member-info a:hover {
+    text-decoration: underline;
+}
+
+.join-us {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.join-us h3 {
+    color: #2774AE;
+    margin-bottom: 1rem;
+}
+
+.join-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.join-us ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.join-us li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.join-us li:before {
+    content: "•";
+    color: #2774AE;
+    position: absolute;
+    left: 0;
+}
+
+.join-us a {
+    color: #2774AE;
+    text-decoration: none;
+}
+
+.join-us a:hover {
+    text-decoration: underline;
+}
+
+/* Alumni list styling */
+.people ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.people ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.8rem 0;
+    display: list-item;
+}
+
+.people ul li strong {
+    color: #333;
+}
+
+.people ul li ul {
+    margin: 0.3rem 0 0.3rem 1.5rem;
+}
+
+.people ul li ul li {
+    font-size: 0.95rem;
+    margin: 0.3rem 0;
+    color: #666;
+}
+
+/* Research page styling */
+.research-section {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    align-items: flex-start;
+}
+
+.research-text {
+    flex: 1;
+    min-width: 0; /* Prevents flex item from overflowing */
+}
+
+.research-image {
+    flex: 0 0 40%;
+    min-width: 0; /* Prevents flex item from overflowing */
+}
+
+.research-image img {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .research-section {
+        flex-direction: column;
+    }
+    
+    .research-image {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

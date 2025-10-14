@@ -1,0 +1,144 @@
+- title: "SpatialAgent: An Autonomous AI Agent for Spatial Biology"
+  authors_array: ["Hanchen Wang#*", "Yichun He#", "Paula Coelho#", "Matthew Bucci#", "Abbas Nazir", "Bob Chen", "Linh Trinh", "Serena Zhang", "Kexin Huang", "Vineethkrishna Chandrasekar", "Douglas C. Chung", "Minsheng Hao", "Ana Carolina Leote", "Yongju Lee", "Bo Li", "Tianyu Liu", "Jin Liu", "Romain Lopez", "Lucas Tawaun", "Mingyu Ma", "Nikita Makarov", "Lisa McGinnis", "Linna Peng", "Stephen Ra", "Gabriele Scalia", "Avtar Singh", "Liming Tao", "Masatoshi Uehara", "Chenyu Wang", "Runmin Wei", "Ryan Copping", "Orit Rozenblatt-Rosen", "Jure Leskovec", "Aviv Regev*"]
+  underline_authors: ["Hanchen Wang#*", "Yichun He#"]
+  year: 2025
+  type: "preprint"
+  journal: "bioRxiv"
+  url: "https://www.biorxiv.org/content/10.1101/2025.04.03.646459v1"
+
+- title: "Spatial transcriptomics AI agent charts hPSC-pancreas maturation in vivo"
+  authors_array: ["Zuwan Lin#", "Wenbo Wang#", "Arnau Marin-Llobet", "Qiang Li", "Samuel D. Pollock", "Xin Sui", "Almir Aljovic", "Jaeyong Lee", "Jongmin Baek", "Ningyue Liang", "Xinhe Zhang", "Connie Kangni Wang", "Jiahao Huang", "Mai Liu", "Zihan Gao", "Hao Sheng", "Jin Du", "Stephen J Lee", "Brandon Wang", "Yichun He", "Jie Ding", "Xiao Wang", "Juan R Alvarez*", "Jia Liu*"]
+  underline_authors: ["Zuwan Lin#", "Wenbo Wang#"]
+  year: 2025
+  type: "preprint"
+  journal: "bioRxiv"
+  url: "https://www.biorxiv.org/content/10.1101/2025.04.01.646731v1"
+
+- title: "Spike sorting AI agent"
+  authors_array: ["Zuwan Lin#", "Arnau Marin-Llobet#", "Jongmin Baek", "Yichun He", "Jaeyong Lee", "Wenbo Wang", "Xinhe Zhang", "Ariel J. Lee", "Ningyue Liang", "Jin Du", "Jie Ding", "Na Li", "Jia Liu*"]
+  underline_authors: ["Zuwan Lin#", "Arnau Marin-Llobet#"]
+  year: 2025
+  type: "preprint"
+  journal: "bioRxiv"
+  url: "https://www.biorxiv.org/content/10.1101/2025.02.11.637754v1"
+
+- title: "Brain implantation of tissue-level-soft bioelectronics via embryonic development"
+  authors_array: ["Hao Sheng#", "Ren Liu#", "Qiang Li#", "Zuwan Lin#", "Yichun He", "Thomas Blum", "Hao Zhao", "Xin Tang", "Wenbo Wang", "Lishuai Jin", "Zheliang Wang", "Emma Hsiao", "Paul Le Floch", "Hao Shen", "Ariel J. Lee", "Rachael Alice Jonas-Closs", "James Briggs", "Siyi Liu", "Daniel Solomon", "Xiao Wang", "Nanshu Lu", "Jia Liu*"]
+  underline_authors: ["Hao Sheng#", "Ren Liu#", "Qiang Li#", "Zuwan Lin#"]
+  year: 2025
+  type: "refereed"
+  journal: "Nature"
+  url: "https://www.nature.com/articles/s41586-025-09106-8"
+  note: "Cover highlight in Nature"
+
+- title: "Plastic-elastomer heterostructure for robust flexible brain-computer interfaces"
+  authors_array: ["Xinyi Lin", "Xinhe Zhang", "Zheliang Wang", "Juntao Chen", "Jaeyong Lee", "Ariel J. Lee", "Hang Yang", "Antoine Remy", "Hao Shen", "Yichun He", "Hao Zhao", "Xuyue Zhang", "Wenbo Wang", "Almir Aljović", "Joost J. Vlassak", "Nanshu Lu", "Jia Liu*"]
+  underline_authors: ["Xinyi Lin"]
+  year: 2025
+  type: "preprint"
+  journal: "bioRxiv"
+  url: "https://www.biorxiv.org/content/10.1101/2025.04.29.651325v1"
+
+- title: "End-to-end multimodal deep learning for real-time decoding of months-long neural activity from the same cells"
+  authors_array: ["Yichun He#", "Arnau Marin-Llobet#", "Hao Sheng", "Ren Liu", "Jia Liu*"]
+  underline_authors: ["Yichun He#", "Arnau Marin-Llobet#"]
+  year: 2024
+  type: "preprint"
+  journal: "bioRxiv"
+  url: "https://www.biorxiv.org/content/10.1101/2024.10.14.618046v1"
+  software: "AutoSort package"
+  url_software: "https://github.com/LiuLab-Bioelectronics-Harvard/AutoSort"
+
+- title: "Towards a universal spatial molecular atlas of the mouse brain"
+  authors_array: ["Yichun He", "Hao Sheng", "Hailing Shi", "Wendy Xueyi Wang", "Zefang Tang", "Jia Liu*", "Xiao Wang*"]
+  underline_authors: ["Yichun He"]
+  year: 2024
+  type: "preprint"
+  journal: "bioRxiv"
+  url: "https://www.biorxiv.org/content/10.1101/2024.05.27.594872v1"
+  software: "FuseMap package"
+  url_software: "https://github.com/wanglab-broad/FuseMap"
+  url_data: "https://www.spatial-atlas.net/FuseMap/"
+
+- title: "Scalable spatial single-cell transcriptomics and translatomics in 3D thick tissue blocks"
+  authors_array: ["Xin Sui#", "Jennifer A. Lo#", "Shuchen Luo", "Yichun He", "Zefang Tang", "Zuwan Lin", "Yiming Zhou", "Wendy Xueyi Wang", "Jia Liu", "Xiao Wang*"]
+  underline_authors: ["Xin Sui#", "Jennifer A. Lo#"]
+  year: 2024
+  type: "preprint"
+  journal: "bioRxiv"
+  url: "https://www.biorxiv.org/content/10.1101/2024.08.05.606553v1"
+
+- title: "Fine-Tuning Discrete Diffusion Models via Reward Optimization with Applications to DNA and Protein Design"
+  authors_array: ["Chenyu Wang#", "Masatoshi Uehara#", "Yichun He", "Amy Wang", "Tommaso Biancalani", "Avantika Lal", "Tommi Jaakkola*", "Sergey Levine*", "Hanchen Wang*", "Aviv Regev*"]
+  underline_authors: ["Chenyu Wang#", "Masatoshi Uehara#"]
+  year: 2024
+  type: "refereed"
+  journal: "NeurIPS 2024 Workshop on Machine Learning in Structural Biology"
+  url: "https://arxiv.org/abs/2410.13643"
+
+- title: "Spatial Atlas of the Mouse Central Nervous System at Molecular Resolution"
+  authors_array: ["Hailing Shi#", "Yichun He#", "Yiming Zhou#", "Jiahao Huang", "Kamal Maher", "Brandon Wang", "Zefang Tang", "Shuchen Luo", "Peng Tan", "Morgan Wu", "Zuwan Lin", "Jingyi Ren", "Yaman Thapa", "Xin Tang", "Ken Y. Chan", "Benjamin E. Deverman", "Hao Shen", "Albert Liu", "Jia Liu*", "Xiao Wang*"]
+  underline_authors: ["Hailing Shi#", "Yichun He#", "Yiming Zhou#"]
+  year: 2023
+  type: "refereed"
+  journal: "Nature"
+  url: "https://www.nature.com/articles/s41586-023-06569-5"
+  software: "mCNS-atlas"
+  url_software: "https://github.com/wanglab-broad/mCNS-atlas"
+  note: "Cover and Perspective highlight in Nature as part of collection for whole mouse brain spatial atlas"
+
+- title: "Multi-task learning for single-cell multi-modality biology"
+  authors_array: ["Xin Tang#", "Jiawei Zhang#", "Yichun He#", "Xinhe Zhang", "Zuwan Lin", "Sebastian Partarrieu", "Emma Bou Hanna", "Zhaolin Ren", "Hao Shen", "Yuhong Yang", "Xiao Wang", "Na Li", "Jie Ding*", "Jia Liu*"]
+  underline_authors: ["Xin Tang#", "Jiawei Zhang#", "Yichun He#"]
+  year: 2023
+  type: "refereed"
+  journal: "Nature Communications"
+  url: "https://www.nature.com/articles/s41467-023-37477-x"
+  software: "UnitedNet package"
+  url_software: "https://github.com/LiuLab-Bioelectronics-Harvard/UnitedNet"
+  note: "Editor highlights in Biotechnology and Methods and Computational Science"
+
+- title: "Multimodal charting of molecular and functional cell states via in situ electro-seq"
+  authors_array: ["Qiang Li#", "Zuwan Lin#", "Ren Liu#", "Xin Tang#", "Jiahao Huang", "Yichun He", "Xin Sui", "Weiwen Tian", "Hao Shen", "Haowen Zhou", "Hao Sheng", "Hailing Shi", "Ling Xiao", "Xiao Wang*", "Jia Liu*"]
+  underline_authors: ["Qiang Li#", "Zuwan Lin#", "Ren Liu#", "Xin Tang#"]
+  year: 2023
+  type: "refereed"
+  journal: "Cell"
+  url: "https://www.cell.com/cell/abstract/S0092-8674(23)00286-6"
+  note: "Cover highlight in Cell, Perspective highlight in Nature Methods"
+
+- title: "Spatiotemporally resolved transcriptomics reveals the subcellular RNA kinetic landscape"
+  authors_array: ["Jingyi Ren#", "Haowen Zhou#", "Hu Zeng#", "Connie Kangni Wang", "Jiahao Huang", "Xiaojie Qiu", "Xin Sui", "Qiang Li", "Xunwei Wu", "Zuwan Lin", "Jennifer A. Lo", "Kamal Maher", "Yichun He", "Xin Tang", "Judson Lam", "Hongyu Chen", "Brian Li", "David E. Fisher", "Jia Liu", "Xiao Wang*"]
+  underline_authors: ["Jingyi Ren#", "Haowen Zhou#", "Hu Zeng#"]
+  year: 2023
+  type: "refereed"
+  journal: "Nature Methods"
+  url: "https://www.nature.com/articles/s41592-023-01829-8"
+
+- title: "Controlling organoid symmetry breaking uncovers an excitable system underlying human axial elongation"
+  authors_array: ["Giridhar M. Anand", "Heitor C. Megale", "Sean H. Murphy", "Theresa Weis", "Zuwan Lin", "Yichun He", "Xiao Wang", "Jia Liu", "Sharad Ramanathan*"]
+  underline_authors: ["Giridhar M. Anand"]
+  year: 2023
+  type: "refereed"
+  journal: "Cell"
+  url: "https://www.cell.com/cell/abstract/S0092-8674(22)01586-0"
+
+- title: "ClusterMap for multi-scale clustering analysis of spatial gene expression"
+  authors_array: ["Yichun He#", "Xin Tang#", "Jiahao Huang", "Jingyi Ren", "Haowen Zhou", "Kevin Chen", "Albert Liu", "Hailing Shi", "Zuwan Lin", "Qiang Li", "Abhishek Aditham", "Johain Ounadjela", "Emanuelle I. Grody", "Jian Shu", "Jia Liu*", "Xiao Wang*"]
+  underline_authors: ["Yichun He#", "Xin Tang#"]
+  year: 2021
+  type: "refereed"
+  journal: "Nature Communications"
+  url: "https://www.nature.com/articles/s41467-021-26044-x"
+  software: "ClusterMap package"
+  url_software: "https://github.com/wanglab-broad/ClusterMap"
+  note: "Research develops new way to map RNAs in the cell"
+
+- title: "Soft bioelectronics for cardiac interfaces"
+  authors_array: ["Xin Tang#", "Yichun He#", "Jia Liu*"]
+  underline_authors: ["Xin Tang#", "Yichun He#"]
+  year: 2022
+  type: "refereed"
+  journal: "Biophysics Reviews"
+  url: "https://pubs.aip.org/aip/bpr/article/3/1/011301/2835528/Soft-bioelectronics-for-cardiac-interfaces"
+  note: "Editor's highlight"

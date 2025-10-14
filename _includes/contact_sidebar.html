@@ -1,0 +1,21 @@
+<div class="contact-sidebar">
+    <h3> Contact Information </h3>
+    <p>
+      Uthsav Chitra <br>
+      Assistant Professor <br>
+      Department of Computer Science <br>
+      Johns Hopkins University <br>
+      <br>
+      Email: uthsav (at) jhu (dot) edu <br>
+      Address: 3400 N Charles St, Baltimore, MD 21218 <br>
+      Office: TBD <br>
+      Phone: TBD <br>
+    </p>
+
+    <h3> Recent News </h3>
+    <ul class="list-unstyled">
+    {% for post in site.posts limit:5 %}
+        <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,19 @@
+{% include header.html %}
+<div class="container-fluid px-2 max-width: 100%">
+    <div class="row">
+        <div class="col-sm-8">
+    	    <div class="jumbotron h-100">
+        	    {{ content }}
+            </div>
+            <div class="join-section text-center">
+                <h3>Interested in joining the Chitra lab?</h3>
+                <p>We are actively looking for highly motivated postdocs, PhD and Master's students, and undergraduate students. <b>Please see the <a href="{{ site.url }}/join">Join</a> page for details.</b></p>
+            </div>
+        </div>
+        <div class="col">
+            <img class="home-image-right" src="/static/img/logo/jhu_cs_building.jpeg" alt="Chitra Lab">
+            {% include contact_sidebar.html %}
+        </div>
+    </div>
+</div>
+{% include footer.html %}

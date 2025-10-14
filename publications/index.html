@@ -1,0 +1,106 @@
+---
+layout: default
+title: Publications
+group: publications
+---
+
+<div class="publications">
+	<h1>Publications</h1>
+	<p class="publication-note">* denotes joint first authorship, † denotes joint last (senior) authorship. <u>Underline</u> indicates member of Chitra Lab or trainee mentored/co-mentored</p>
+
+	{% assign papers = site.data.publications | sort: 'year' | reverse %}
+	{% assign preprints = papers | where: "type", "preprint" %}
+	
+	{% if preprints.size > 0 %}
+		<h2>Preprints</h2>
+		{% for paper in preprints %}
+			<div class="publication-item">
+				<div class="publication-content">
+					<div class="publication-title">
+						{% if paper.url %}
+							<a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
+						{% elsif paper.pdf %}
+							<a href="{{ paper.pdf }}" target="_blank">{{ paper.title }}</a>
+						{% else %}
+							<a href="#">{{ paper.title }}</a>
+						{% endif %}
+					</div>
+					<div class="publication-authors">
+						{% for author in paper.authors_array %}
+							{% if author contains "Uthsav Chitra" %}
+								{% if author contains "*" or author contains "†" %}
+									<u><strong>{{ author }}</strong></u>{% unless forloop.last %}, {% endunless %}
+								{% else %}
+									<u><strong>{{ author }}</strong></u>{% unless forloop.last %}, {% endunless %}
+								{% endif %}
+							{% elsif paper.underline_authors contains author %}
+								<u>{{ author }}</u>{% unless forloop.last %}, {% endunless %}
+							{% else %}
+								{{ author }}{% unless forloop.last %}, {% endunless %}
+							{% endif %}
+						{% endfor %}
+					</div>
+					{% if paper.journal %}
+						<div class="publication-journal"><em>{{ paper.journal }}</em></div>
+					{% endif %}
+					{% if paper.slides or paper.talk %}
+						<div class="publication-links">
+							{% if paper.slides %}[<a href="{{ paper.slides }}">slides</a>]{% endif %}
+							{% if paper.talk %}[<a href="{{ paper.talk }}">talk</a>]{% endif %}
+						</div>
+					{% endif %}
+					{% if paper.note %}
+						<div class="publication-note {% if paper.note contains 'Best Paper Award' %}award{% endif %}">{{ paper.note }}</div>
+					{% endif %}
+				</div>
+			</div>
+		{% endfor %}
+	{% endif %}
+
+	{% assign years = papers | where: "type", "refereed" | map: "year" | uniq | sort | reverse %}
+	{% for year in years %}
+		<h2>{{ year }}</h2>
+		{% for paper in papers %}
+			{% if paper.year == year and paper.type == "refereed" %}
+				<div class="publication-item">
+					<div class="publication-content">
+						<div class="publication-title">
+							{% if paper.url %}
+								<a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
+							{% else %}
+								<a href="#">{{ paper.title }}</a>
+							{% endif %}
+						</div>
+						<div class="publication-authors">
+							{% for author in paper.authors_array %}
+								{% if author contains "Uthsav Chitra" %}
+									{% if author contains "*" or author contains "†" %}
+										<u><strong>{{ author }}</strong></u>{% unless forloop.last %}, {% endunless %}
+									{% else %}
+										<u><strong>{{ author }}</strong></u>{% unless forloop.last %}, {% endunless %}
+									{% endif %}
+								{% elsif paper.underline_authors contains author %}
+									<u>{{ author }}</u>{% unless forloop.last %}, {% endunless %}
+								{% else %}
+									{{ author }}{% unless forloop.last %}, {% endunless %}
+								{% endif %}
+							{% endfor %}
+						</div>
+						{% if paper.journal %}
+							<div class="publication-journal"><em>{{ paper.journal }}</em></div>
+						{% endif %}
+						{% if paper.slides or paper.talk %}
+							<div class="publication-links">
+								{% if paper.slides %}[<a href="{{ paper.slides }}">slides</a>]{% endif %}
+								{% if paper.talk %}[<a href="{{ paper.talk }}">talk</a>]{% endif %}
+							</div>
+						{% endif %}
+						{% if paper.note %}
+							<div class="publication-note {% if paper.note contains 'Best Paper Award' %}award{% endif %}">{{ paper.note }}</div>
+						{% endif %}
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+</div>
