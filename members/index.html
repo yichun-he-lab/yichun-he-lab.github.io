@@ -5,25 +5,11 @@ group: members
 ---
 
 <div class="people">
-    <h1>People</h1>
-
-    <!-- Principal Investigator -->
-    {% assign pi = site.members | where: "category", "pi" | first %}
-    <div class="member-profile">
-        <div class="member-image">
-            <img src="{{ pi.image }}" alt="{{ pi.name }}">
-        </div>
-        <div class="member-info">
-            <h2>{{ pi.name }}</h2>
-            <h3>{{ pi.title }}</h3>
-            {{ pi.content | markdownify }}
-        </div>
-    </div>
-
-    <hr>
+    <h1>Lab Members</h1>
+    
+    <p>Information about the Principal Investigator can be found on the <a href="/">Home</a> page.</p>
 
     <!-- Lab Members -->
-    <h2>Lab Members</h2>
     
     {% assign members = site.members | where: "category", "member" | sort: "order" %}
     {% for member in members %}

@@ -22,9 +22,9 @@
 #   link: "/courses"
 #   group: courses
 
-- name: News
-  link: /news
-  group: news
+# - name: News
+#   link: /news
+#   group: news
 
 - name: Join
   link: /join
