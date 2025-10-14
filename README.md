@@ -1,6 +1,7 @@
 # He Lab Website
 ====================
 
+
 Technologies this website uses:  
 
     Jekyll  
@@ -19,3 +20,5 @@ To create a conda environment to locally test and host, the following should suf
     conda activate jekyll
     bundle install
     bundle exec jekyll serve
+
+This website design is borrowed from https://github.com/chitra-lab/chitra-lab.github.io. Thanks!
