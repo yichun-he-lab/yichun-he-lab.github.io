@@ -6,7 +6,7 @@ group: publications
 
 <div class="publications">
 	<h1>Publications</h1>
-	<p class="publication-note">* denotes joint first authorship, † denotes joint last (senior) authorship. <u>Underline</u> indicates member of Chitra Lab or trainee mentored/co-mentored</p>
+	<p class="publication-note">* denotes joint first authorship, † denotes joint last (senior) authorship. <u>Underline</u> indicates member of He Lab or trainee mentored/co-mentored</p>
 
 	{% assign papers = site.data.publications | sort: 'year' | reverse %}
 	{% assign preprints = papers | where: "type", "preprint" %}
@@ -27,7 +27,7 @@ group: publications
 					</div>
 					<div class="publication-authors">
 						{% for author in paper.authors_array %}
-							{% if author contains "Uthsav Chitra" %}
+							{% if author contains "Yichun He" %}
 								{% if author contains "*" or author contains "†" %}
 									<u><strong>{{ author }}</strong></u>{% unless forloop.last %}, {% endunless %}
 								{% else %}
@@ -73,7 +73,7 @@ group: publications
 						</div>
 						<div class="publication-authors">
 							{% for author in paper.authors_array %}
-								{% if author contains "Uthsav Chitra" %}
+								{% if author contains "Yichun He" %}
 									{% if author contains "*" or author contains "†" %}
 										<u><strong>{{ author }}</strong></u>{% unless forloop.last %}, {% endunless %}
 									{% else %}
