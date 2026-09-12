@@ -1,0 +1,164 @@
+{
+  "publications": [
+    {
+      "url": "https://www.nature.com/articles/s41586-025-09106-8",
+      "image": "images/embryo.png",
+      "title": "Brain implantation of tissue-level-soft bioelectronics via embryonic development",
+      "authors": "Hao Sheng#, Ren Liu#, Qiang Li#, Zuwan Lin#, <strong>Yichun He</strong>, Thomas Blum, Hao Zhao, Xin Tang, Wenbo Wang, Lishuai Jin, Zheliang Wang, Emma Hsiao, Paul Le Floch, Hao Shen, Ariel J. Lee, Rachael Alice Jonas-Closs, James Briggs, Siyi Liu, Daniel Solomon, Xiao Wang, Nanshu Lu, and Jia Liu*",
+      "venue": "Nature, 2025",
+      "year": "2025"
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.03.646459v1",
+      "image": "images/SpatialAgent.png",
+      "title": "SpatialAgent: An Autonomous AI Agent for Spatial Biology",
+      "authors": "Hanchen Wang#*, <strong>Yichun He</strong>#, Paula Coelho#, Matthew Bucci#, Abbas Nazir, Bob Chen, Linh Trinh, Serena Zhang, Kexin Huang, Vineethkrishna Chandrasekar, Douglas C. Chung, Minsheng Hao, Ana Carolina Leote, Yongju Lee, Bo Li, Tianyu Liu, Jin Liu, Romain Lopez, Lucas Tawaun, Mingyu Ma, Nikita Makarov, Lisa McGinnis, Linna Peng, Stephen Ra, Gabriele Scalia, Avtar Singh, Liming Tao, Masatoshi Uehara, Chenyu Wang, Runmin Wei, Ryan Copping, Orit Rozenblatt-Rosen, Jure Leskovec, Aviv Regev*",
+      "venue": "bioRxiv, 2025",
+      "year": "2025",
+      "links": [
+        [
+          "Code",
+          "https://github.com/Genentech/SpatialAgent"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.01.646731v1",
+      "image": "images/STAgent.png",
+      "title": "Spatial transcriptomics AI agent charts hPSC-pancreas maturation in vivo",
+      "authors": "Zuwan Lin#, Wenbo Wang#, Arnau Marin-Llobet, Qiang Li, Samuel D. Pollock, Xin Sui, Almir Aljovic, Jaeyong Lee, Jongmin Baek, Ningyue Liang, Xinhe Zhang, Connie Kangni Wang, Jiahao Huang, Mai Liu, Zihan Gao, Hao Sheng, Jin Du, Stephen J Lee, Brandon Wang, <strong>Yichun He</strong>, Jie Ding, Xiao Wang, Juan R Alvarez*, Jia Liu*",
+      "venue": "Nature Methods · Accepted",
+      "year": "2025"
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2025.02.11.637754v1",
+      "image": "images/SpikeAgent.png",
+      "title": "Spike sorting AI agent",
+      "authors": "Zuwan Lin#, Arnau Marin-Llobet#, Jongmin Baek, <strong>Yichun He</strong>, Jaeyong Lee, Wenbo Wang, Xinhe Zhang, Ariel J. Lee, Ningyue Liang, Jin Du, Jie Ding, Na Li, Jia Liu*",
+      "venue": "Nature Neuroscience · Accepted",
+      "year": "2025"
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2024.05.27.594872v1",
+      "image": "images/fusemap.png",
+      "title": "An agentic AI spatial molecular foundation model of the brain",
+      "authors": "<strong>Y. He</strong>, H. Sheng, M. Yuan, Y. Zhou, H. Shi, W. X. Wang, Z. Tang, Z. Lin, W. Wang, N. Li, J. Liu* and X. Wang*",
+      "venue": "Nature Methods · Accepted, 2026",
+      "year": "2026",
+      "links": [
+        [
+          "Code",
+          "https://github.com/yichunher/FuseMap"
+        ],
+        [
+          "Data portal",
+          "https://www.spatial-atlas.net/FuseMap/"
+        ],
+        [
+          "Documentation",
+          "https://fusemap.readthedocs.io/en/latest/"
+        ]
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1038/s41592-025-02867-0",
+      "image": "images/deep_star_ribo_map.png",
+      "title": "Scalable spatial single-cell transcriptomics and translatomics in 3D thick tissue blocks",
+      "authors": "Xin Sui#, Jennifer A. Lo#, Shuchen Luo, <strong>Yichun He</strong>, Zefang Tang, Zuwan Lin,Yiming Zhou, Wendy Xueyi Wang, Jia Liu, Xiao Wang*",
+      "venue": "Nature Methods, 2025",
+      "year": "2025"
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2024.10.14.618046v1",
+      "image": "images/Autosort.png",
+      "title": "End-to-end multimodal deep learning for real-time decoding of months-long neural activity from the same cells",
+      "authors": "<strong>Yichun He</strong>#, Arnau Marin-Llobet#, Hao Sheng, Ren Liu, Jia Liu*",
+      "venue": "bioRxiv, 2024",
+      "year": "2024",
+      "links": [
+        [
+          "Code",
+          "https://github.com/LiuLab-Bioelectronics-Harvard/AutoSort"
+        ],
+        [
+          "Documentation",
+          "https://autosort.readthedocs.io/en/latest/"
+        ]
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2410.13643",
+      "image": "images/DRAKES.png",
+      "title": "Fine-Tuning Discrete Diffusion Models via Reward Optimization with Applications to DNA and Protein Design",
+      "authors": "Chenyu Wang#, Masatoshi Uehara#, <strong>Yichun He</strong>, Amy Wang, Tommaso Biancalani, Avantika Lal, Tommi Jaakkola*, Sergey Levine*, Hanchen Wang*, Aviv Regev*",
+      "venue": "ICLR, 2025",
+      "year": "2025"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-023-06569-5",
+      "image": "images/GraphicAbstract_v2.jpg",
+      "title": "Spatial Atlas of the Mouse Central Nervous System at Molecular Resolution",
+      "authors": "Hailing Shi#, <strong>Yichun He</strong>#, Yiming Zhou#, Jiahao Huang, Kamal Maher, Brandon Wang, Zefang Tang, Shuchen Luo, Peng Tan, Morgan Wu, Zuwan Lin, Jingyi Ren, Yaman Thapa, Xin Tang, Ken Y. Chan, Benjamin E. Deverman, Hao Shen, Albert Liu, Jia Liu* &amp; Xiao Wang*",
+      "venue": "Nature, 2023",
+      "year": "2023",
+      "links": [
+        [
+          "Code",
+          "https://github.com/wanglab-broad/mCNS-atlas"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.cell.com/cell/abstract/S0092-8674(22)01586-0",
+      "image": "images/sharad.png",
+      "title": "Controlling organoid symmetry breaking uncovers an excitable system underlying human axial elongation",
+      "authors": "Giridhar M. Anand, Heitor C. Megale, Sean H. Murphy, Theresa Weis, Zuwan Lin, <strong>Yichun He</strong>, Xiao Wang, Jia Liu, Sharad Ramanathan*",
+      "venue": "Cell, 2023",
+      "year": "2023"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41592-023-01829-8",
+      "image": "images/tempomap.jpg",
+      "title": "Spatiotemporally resolved transcriptomics reveals the subcellular RNA kinetic landscape",
+      "authors": "Jingyi Ren#, Haowen Zhou#, Hu Zeng#, Connie Kangni Wang, Jiahao Huang, Xiaojie Qiu, Xin Sui, Qiang Li, Xunwei Wu, Zuwan Lin, Jennifer A. Lo, Kamal Maher, <strong>Yichun He</strong>, Xin Tang, Judson Lam, Hongyu Chen, Brian Li, David E. Fisher, Jia Liu &amp; Xiao Wang*",
+      "venue": "Nature Methods, 2023",
+      "year": "2023"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-023-37477-x",
+      "image": "images/unitednet.png",
+      "title": "Explainable multi-task learning for multi-modality biological data analysis",
+      "authors": "Xin Tang#, Jiawei Zhang#, <strong>Yichun He</strong>#, Xinhe Zhang, Zuwan Lin, Sebastian Partarrieu, Emma Bou Hanna, Zhaolin Ren, Hao Shen, Yuhong Yang, Xiao Wang, Na Li, Jie Ding* &amp; Jia Liu*",
+      "venue": "Nature Communications, 2023",
+      "year": "2023",
+      "links": [
+        [
+          "Code",
+          "https://github.com/LiuLab-Bioelectronics-Harvard/UnitedNet"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.cell.com/cell/abstract/S0092-8674(23)00286-6",
+      "image": "images/electroseq.png",
+      "title": "Multimodal charting of molecular and functional cell states via in situ electro-seq",
+      "authors": "Qiang Li#, Zuwan Lin#, Ren Liu#, Xin Tang#, Jiahao Huang, <strong>Yichun He</strong>, Xin Sui, Weiwen Tian, Hao Shen, Haowen Zhou, Hao Sheng, Hailing Shi, Ling Xiao, Xiao Wang*, Jia Liu*",
+      "venue": "Cell, 2023",
+      "year": "2023"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-021-26044-x",
+      "image": "images/FeatureImage-01.png",
+      "title": "ClusterMap for multi-scale clustering analysis of spatial gene expression",
+      "authors": "<strong>Yichun He</strong>#, Xin Tang#, Jiahao Huang, Jingyi Ren, Haowen Zhou, Kevin Chen, Albert Liu, Hailing Shi, Zuwan Lin, Qiang Li, Abhishek Aditham, Johain Ounadjela, Emanuelle I. Grody, Jian Shu, Jia Liu* &amp; Xiao Wang*",
+      "venue": "Nature Communications, 2021",
+      "year": "2021",
+      "links": [
+        [
+          "Code",
+          "https://github.com/wanglab-broad/ClusterMap"
+        ]
+      ]
+    }
+  ]
+}
