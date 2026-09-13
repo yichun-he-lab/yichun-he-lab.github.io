@@ -76,6 +76,7 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 .mobile-nav {background:#fff;padding:8px 25px 20px;border-bottom:1px solid var(--line);max-height:calc(100dvh - 72px);overflow:auto}
 .mobile-nav a {display:block;padding:10px}
 .mobile-nav a[aria-current] {text-decoration:underline}
+.desktop-nav a.nav-join,.mobile-nav a.nav-join {text-decoration:underline;text-underline-offset:4px}
 .home-intro {padding-top:131px;padding-bottom:70px}
 .home-subtitle {margin-top:13px}
 .home-affiliation {color:var(--muted);margin-top:6px}

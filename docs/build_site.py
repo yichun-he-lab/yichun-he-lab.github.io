@@ -10,13 +10,13 @@ from html import escape as esc
 ROOT = Path(__file__).resolve().parent
 DATA = json.loads((ROOT / 'site-data.json').read_text())
 EMAIL = 'yichunhe@illinois.edu'
-NAV = [('index.html', 'Home'), ('yichun-he.html', 'Yichun He'), ('team.html', 'Lab Members'), ('about.html', 'Research'), ('publications.html', 'Publications'), ('join.html', 'Join us'), ('https://sites.google.com/view/yichunhelab-intranet', 'Lab Intranet')]
+NAV = [('index.html', 'Home'), ('yichun-he.html', 'Yichun He'), ('team.html', 'Lab Members'), ('about.html', 'Research'), ('publications.html', 'Publications'), ('https://sites.google.com/view/yichunhelab-intranet', 'Lab Intranet'), ('join.html', 'Join us!')]
 
 def asset_url(path):
     return f'{path}?v={sha256((ROOT / path).read_bytes()).hexdigest()[:10]}'
 
 def page(file, title, description, body, home=False):
-    links = ''.join(f'<a href="{u}"'+(' aria-current="page"' if file==u else '')+f'>{n}</a>' for u,n in NAV)
+    links = ''.join(f'<a href="{u}"'+(' class="nav-join"' if u=='join.html' else '')+(' aria-current="page"' if file==u else '')+f'>{n}</a>' for u,n in NAV)
     out = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)} | He Lab</title><meta name="description" content="{esc(description)}"><meta name="theme-color" content="#ffffff">
