@@ -6,7 +6,12 @@
       "title": "Brain implantation of tissue-level-soft bioelectronics via embryonic development",
       "authors": "Hao Sheng#, Ren Liu#, Qiang Li#, Zuwan Lin#, <strong>Yichun He</strong>, Thomas Blum, Hao Zhao, Xin Tang, Wenbo Wang, Lishuai Jin, Zheliang Wang, Emma Hsiao, Paul Le Floch, Hao Shen, Ariel J. Lee, Rachael Alice Jonas-Closs, James Briggs, Siyi Liu, Daniel Solomon, Xiao Wang, Nanshu Lu, and Jia Liu*",
       "venue": "Nature, 2025",
-      "year": "2025"
+      "year": "2025",
+      "highlights": [
+        {
+          "text": "Cover highlight · Nature"
+        }
+      ]
     },
     {
       "url": "https://www.biorxiv.org/content/10.1101/2025.04.03.646459v1",
@@ -17,7 +22,7 @@
       "year": "2025",
       "links": [
         [
-          "Code",
+          "SpatialAgent code",
           "https://github.com/Genentech/SpatialAgent"
         ]
       ]
@@ -27,7 +32,7 @@
       "image": "images/STAgent.png",
       "title": "Spatial transcriptomics AI agent charts hPSC-pancreas maturation in vivo",
       "authors": "Zuwan Lin#, Wenbo Wang#, Arnau Marin-Llobet, Qiang Li, Samuel D. Pollock, Xin Sui, Almir Aljovic, Jaeyong Lee, Jongmin Baek, Ningyue Liang, Xinhe Zhang, Connie Kangni Wang, Jiahao Huang, Mai Liu, Zihan Gao, Hao Sheng, Jin Du, Stephen J Lee, Brandon Wang, <strong>Yichun He</strong>, Jie Ding, Xiao Wang, Juan R Alvarez*, Jia Liu*",
-      "venue": "Nature Methods · Accepted",
+      "venue": "bioRxiv, 2025",
       "year": "2025"
     },
     {
@@ -47,11 +52,11 @@
       "year": "2026",
       "links": [
         [
-          "Code",
+          "FuseMap code",
           "https://github.com/yichunher/FuseMap"
         ],
         [
-          "Data portal",
+          "molCCF data portal",
           "https://www.spatial-atlas.net/FuseMap/"
         ],
         [
@@ -77,7 +82,7 @@
       "year": "2024",
       "links": [
         [
-          "Code",
+          "AutoSort code",
           "https://github.com/LiuLab-Bioelectronics-Harvard/AutoSort"
         ],
         [
@@ -103,9 +108,19 @@
       "year": "2023",
       "links": [
         [
-          "Code",
+          "mCNS atlas code",
           "https://github.com/wanglab-broad/mCNS-atlas"
         ]
+      ],
+      "highlights": [
+        {
+          "text": "Cover & perspective highlight · Nature whole mouse brain collection",
+          "url": "https://www.nature.com/immersive/d42859-023-00069-2/index.html"
+        },
+        {
+          "text": "Harvard Brain Science Initiative · Google Map of the Mouse Brain at Molecular Resolution",
+          "url": "https://brain.harvard.edu/hbi_news/google-map-of-mouse-brain-at-molecular-resolution/"
+        }
       ]
     },
     {
@@ -133,9 +148,15 @@
       "year": "2023",
       "links": [
         [
-          "Code",
+          "UnitedNet code",
           "https://github.com/LiuLab-Bioelectronics-Harvard/UnitedNet"
         ]
+      ],
+      "highlights": [
+        {
+          "text": "Editors’ Highlights · Nature Communications: Biotechnology and Methods; Computational Science",
+          "url": "https://www.nature.com/subjects/computational-science/ncomms"
+        }
       ]
     },
     {
@@ -144,7 +165,16 @@
       "title": "Multimodal charting of molecular and functional cell states via in situ electro-seq",
       "authors": "Qiang Li#, Zuwan Lin#, Ren Liu#, Xin Tang#, Jiahao Huang, <strong>Yichun He</strong>, Xin Sui, Weiwen Tian, Hao Shen, Haowen Zhou, Hao Sheng, Hailing Shi, Ling Xiao, Xiao Wang*, Jia Liu*",
       "venue": "Cell, 2023",
-      "year": "2023"
+      "year": "2023",
+      "highlights": [
+        {
+          "text": "Cover highlight · Cell"
+        },
+        {
+          "text": "Perspective highlight · Nature Methods",
+          "url": "https://www.nature.com/articles/s41592-023-01922-y"
+        }
+      ]
     },
     {
       "url": "https://www.nature.com/articles/s41467-021-26044-x",
@@ -155,9 +185,29 @@
       "year": "2021",
       "links": [
         [
-          "Code",
+          "ClusterMap code",
           "https://github.com/wanglab-broad/ClusterMap"
         ]
+      ],
+      "highlights": [
+        {
+          "text": "Harvard SEAS · Mapping RNAs",
+          "url": "https://seas.harvard.edu/news/2021/12/mapping-rnas"
+        }
+      ]
+    },
+    {
+      "url": "https://pubs.aip.org/aip/bpr/article/3/1/011301/2835528/Soft-bioelectronics-for-cardiac-interfaces",
+      "image": "images/cardiac-bioelectronics.jpg",
+      "title": "Soft bioelectronics for cardiac interfaces",
+      "authors": "Xin Tang#, <strong>Yichun He</strong>#, Jia Liu*",
+      "venue": "Biophysics Reviews, 2022",
+      "year": "2022",
+      "highlights": [
+        {
+          "text": "Editor’s highlight · AIP Scilight",
+          "url": "https://pubs.aip.org/aip/sci/article/2022/2/021107/2848894/Flexible-and-stretchable-bioelectronics-inform"
+        }
       ]
     }
   ]
