@@ -189,11 +189,7 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 .principles {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
 .principles .eyebrow {display:none}
 .principles h3 {margin-bottom:13px}
-.join-welcome {margin-bottom:48px}
-.join-welcome p {max-width:880px}
-.join-welcome p+p {margin-top:16px}
-.join-welcome .text-link {display:inline-block;margin-top:18px}
-.join-context {display:grid;grid-template-columns:280px 1fr;gap:65px;margin-bottom:30px}
+.join-context {display:grid;grid-template-columns:280px 1fr;gap:65px;margin-top:55px;margin-bottom:30px}
 .join-context p {margin-top:16px}
 .join-context .contact-address {margin-top:8px}
 .join-campus {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-bottom:60px}
@@ -237,9 +233,11 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
  .research-detail,.founder {grid-template-columns:260px 1fr;gap:40px}
  .join-layout,.join-context {grid-template-columns:250px 1fr;gap:40px}
 }
-@media(max-width:800px) {
+@media(max-width:960px) {
  .desktop-nav {display:none}
  #hamburger {display:block}
+}
+@media(max-width:800px) {
  .nav-inner {padding-inline:24px}
  .directions {gap:24px}
  .research-detail {grid-template-columns:220px 1fr;gap:30px}

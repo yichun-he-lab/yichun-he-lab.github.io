@@ -10,7 +10,7 @@ from html import escape as esc
 ROOT = Path(__file__).resolve().parent
 DATA = json.loads((ROOT / 'site-data.json').read_text())
 EMAIL = 'yichunhe@illinois.edu'
-NAV = [('index.html', 'Home'), ('yichun-he.html', 'Yichun He'), ('team.html', 'Lab Members'), ('about.html', 'Research'), ('publications.html', 'Publications'), ('join.html', 'Join us')]
+NAV = [('index.html', 'Home'), ('yichun-he.html', 'Yichun He'), ('team.html', 'Lab Members'), ('about.html', 'Research'), ('publications.html', 'Publications'), ('join.html', 'Join us'), ('https://sites.google.com/view/yichunhelab-intranet', 'Lab Intranet')]
 
 def asset_url(path):
     return f'{path}?v={sha256((ROOT / path).read_bytes()).hexdigest()[:10]}'
@@ -154,16 +154,7 @@ team=f'''<section class="wrap members-intro" id="lab-members" aria-labelledby="m
 {link('join.html','Join us!','button primary')}</section>'''
 page('team.html','Lab Members','Meet the research community we are building at He Lab.',team)
 
-join=intro('JOIN HE LAB','Join us','Help shape AI for biology and human intelligence. We welcome inquiries for our 2027 launch at Illinois.')
-join+=f'''<section class="wrap join-welcome" aria-label="Our research community">
-<p>We value strong programming and quantitative skills, curiosity, and independent thinking. Prior biology training is welcome but not required.</p>
-<p><strong>Research interests:</strong> multimodal and causal AI, computational biology and neuroscience, and scientific agents.</p>
-{link('about.html','Explore our research')}
-</section>
-<section class="wrap join-context" aria-label="Contact and location">
-<div><h2>Contact</h2><p>Yichun He</p><a href="mailto:{EMAIL}" class="contact-address">{EMAIL} ↗</a></div>
-<div><h2>Location</h2><p>Siebel School of Computing and Data Science<br>University of Illinois Urbana-Champaign</p></div>
-</section>'''
+join=intro('JOIN HE LAB','Join us','Help shape AI for biology and human intelligence. We welcome inquiries for our 2027 launch at Illinois from people with strong programming and quantitative skills, curiosity, and independent thinking. Our research spans multimodal and causal AI, computational biology and neuroscience, and scientific agents. Prior biology training is welcome but not required.')
 join+='''<section class="wrap join-campus" aria-label="Explore the Illinois campus and the Siebel School">
 <figure><img src="images/uiuc-campus.webp" width="532" height="297" alt="An aerial view of the University of Illinois Urbana-Champaign campus, with leafy walkways, red-brick buildings, and the Main Quad at dusk." decoding="async"><figcaption><a href="https://illinois.edu/">University of Illinois Urbana-Champaign <span aria-hidden="true">↗</span></a></figcaption></figure>
 <figure><img src="images/uiuc-siebel-center.webp" width="1200" height="809" alt="The glass-fronted computer science building at Illinois, with illuminated walkways and a blue evening sky." decoding="async"><figcaption><a href="https://siebelschool.illinois.edu/">Siebel School of Computing and Data Science <span aria-hidden="true">↗</span></a></figcaption></figure>
@@ -173,7 +164,11 @@ join+=f'''<section class="wrap join-layout" aria-labelledby="opportunities-title
 <article id="graduate"><h3>Graduate students</h3><p><strong>Current or admitted Illinois students:</strong> send your CV, program, and a brief summary of your research experience and interests.</p><p><strong>Prospective students:</strong> send your CV, transcripts, and research interests. Apply through the relevant Illinois graduate program.</p>{link('https://siebelschool.illinois.edu/academics/graduate','Graduate admissions')}</article>
 <article id="undergraduate"><h3>Undergraduates and interns</h3><p>Students from Illinois and other institutions are welcome. Send your <strong>CV, interests, relevant coursework, and availability,</strong> plus a project or code sample if available.</p></article>
 <article id="visiting"><h3>Visiting scholars</h3><p>Send your <strong>CV, home institution, proposed research question, and visit dates.</strong> We can discuss project fit and visit arrangements directly.</p></article></div></section>
-<section class="mission-band"><div class="wrap mission-grid"><div><h2>Collaborate with us</h2><p>We welcome experimental researchers, clinicians, industry partners, and supporters to explore shared questions in biological discovery and human health.</p>{link('mailto:'+EMAIL,'Discuss a collaboration')}</div></div></section>'''
+<section class="mission-band"><div class="wrap mission-grid"><div><h2>Collaborate with us</h2><p>We welcome experimental researchers, clinicians, industry partners, and supporters to explore shared questions in biological discovery and human health.</p>{link('mailto:'+EMAIL,'Discuss a collaboration')}</div></div></section>
+<section class="wrap join-context" aria-label="Contact and location">
+<div><h2>Contact</h2><p>Yichun He</p><a href="mailto:{EMAIL}" class="contact-address">{EMAIL} ↗</a></div>
+<div><h2>Location</h2><p>Siebel School of Computing and Data Science<br>University of Illinois Urbana-Champaign</p></div>
+</section>'''
 page('join.html','Join us','Explore research opportunities and collaborations with He Lab, launching at Illinois in 2027.',join)
 
 pubs=intro('PUBLICATIONS','The work behind <br><em>the questions.</em>','Selected publications and preprints by Yichun He and collaborators, including work completed before the launch of He Lab.')
