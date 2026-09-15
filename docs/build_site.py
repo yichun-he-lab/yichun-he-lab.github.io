@@ -92,8 +92,8 @@ def research_publications(slug, direction):
 <div class="research-paper-copy"><p class="eyebrow">{esc(p['venue'])}</p><h4><a href="{p['url']}">{esc(p['title'])}</a></h4><p class="publication-authors">{p['authors']}</p><div class="publication-links">{related}</div>{publication_highlights(p)}</div>
 </article>''')
     return f'''<section class="research-publications" data-publication-carousel role="region" aria-roledescription="carousel" aria-label="Representative publications: {esc(direction, quote=True)}">
-<div class="research-publications-heading"><h3>Representative publications</h3><div class="paper-controls" hidden><button type="button" data-paper-toggle>Pause</button><button type="button" data-paper-prev aria-label="Previous publication">←</button><span class="paper-count" aria-live="off">1 / 2</span><button type="button" data-paper-next aria-label="Next publication">→</button></div></div>
-<div class="research-paper-stage">{''.join(slides)}</div><p class="pub-key"># Equal contribution · * Corresponding author</p>
+<div class="research-publications-heading"><div class="paper-controls" hidden><button type="button" data-paper-toggle>Pause</button><button type="button" data-paper-prev aria-label="Previous publication">←</button><span class="paper-count" aria-live="off">1 / 2</span><button type="button" data-paper-next aria-label="Next publication">→</button></div></div>
+<div class="research-paper-stage">{''.join(slides)}</div>
 </section>'''
 
 SELECTED=[('594872','A shared molecular model of the brain'),('646459','AI agents for spatial biology'),('s41586-023-06569','Mapping the mouse central nervous system at molecular resolution'),('s41467-023-37477','Connecting multimodal views of cells'),('618046','Tracking neural activity over time'),('s41467-021-26044','Identifying cells and tissue structure from spatial gene expression')]

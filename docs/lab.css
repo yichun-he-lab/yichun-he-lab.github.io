@@ -137,7 +137,7 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 .research-detail {display:grid;grid-template-columns:300px 1fr;gap:60px;margin-top:55px;padding-bottom:50px;border-bottom:1px solid var(--line)}
 .detail-aside img {width:100%;aspect-ratio:1;object-fit:contain}
 .research-publications {grid-column:1/-1;min-width:0;border-top:1px solid var(--line);padding-top:28px}
-.research-publications-heading {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.research-publications-heading {display:flex;align-items:center;justify-content:flex-end;gap:16px;margin-bottom:24px;flex-wrap:wrap}
 .paper-controls {display:flex;align-items:center;gap:10px}
 .paper-controls[hidden] {display:none}
 .paper-controls button {font:inherit;font-size:var(--small);color:inherit;background:#fff;border:1px solid var(--line);border-radius:3px;min-width:44px;min-height:44px;padding:8px 12px;cursor:pointer}
