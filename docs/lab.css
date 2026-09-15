@@ -136,6 +136,30 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 .eyebrow {letter-spacing:.03em;color:var(--muted)}
 .research-detail {display:grid;grid-template-columns:300px 1fr;gap:60px;margin-top:55px;padding-bottom:50px;border-bottom:1px solid var(--line)}
 .detail-aside img {width:100%;aspect-ratio:1;object-fit:contain}
+.research-publications {grid-column:1/-1;min-width:0;border-top:1px solid var(--line);padding-top:28px}
+.research-publications-heading {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.paper-controls {display:flex;align-items:center;gap:10px}
+.paper-controls[hidden] {display:none}
+.paper-controls button {font:inherit;font-size:var(--small);color:inherit;background:#fff;border:1px solid var(--line);border-radius:3px;min-width:44px;min-height:44px;padding:8px 12px;cursor:pointer}
+.paper-controls button:hover {background:#f5f4f7}
+.paper-count {font-size:var(--small);font-variant-numeric:tabular-nums;min-width:36px;text-align:center}
+.research-paper {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:36px;align-items:start;margin-bottom:24px}
+.research-paper-figure {display:block;background:#fafafa;padding:12px}
+.research-paper-figure img {display:block;width:100%;height:320px;object-fit:contain}
+.research-paper-copy {min-width:0}
+.research-paper-copy h4 {font-size:var(--subheading);line-height:1.35;font-weight:700;margin:10px 0 14px}
+.research-paper-copy .publication-authors {font-size:var(--small);line-height:1.65}
+.research-paper-copy .publication-links {margin-top:16px}
+.research-publications.is-enhanced .research-paper-stage {display:grid;overflow:hidden}
+.research-publications.is-enhanced .research-paper {grid-area:1/1;visibility:hidden;opacity:0;transform:translateX(24px);transition:opacity .35s ease,transform .35s ease,visibility .35s}
+.research-publications.is-enhanced .research-paper.is-active {visibility:visible;opacity:1;transform:none}
+@media(max-width:700px) {
+ .research-paper {grid-template-columns:minmax(0,1fr);gap:22px}
+ .research-paper-figure img {height:250px}
+}
+@media(prefers-reduced-motion:reduce) {
+ .research-publications.is-enhanced .research-paper {transition:none;transform:none}
+}
 .detail-credit {color:var(--muted);margin-top:9px}
 .detail-credit a {text-decoration:underline;text-underline-offset:3px}
 .detail-tag {color:var(--muted);margin-top:12px}

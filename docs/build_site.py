@@ -76,6 +76,26 @@ def publication_highlights(publication):
         items += f'<li>{text}</li>'
     return f'<ul class="publication-highlights" aria-label="Publication highlights and news">{items}</ul>' if items else ''
 
+RESEARCH_PUBLICATIONS = {
+    'cross-organ': ['s41467-021-26044', 's41586-023-06569'],
+    'brain': ['618046', 's41467-023-37477'],
+    'discovery': ['594872', '646459'],
+}
+
+def research_publications(slug, direction):
+    slides = []
+    for index, key in enumerate(RESEARCH_PUBLICATIONS[slug]):
+        p = next(p for p in DATA['publications'] if key in p['url'])
+        related = ''.join(link(url, label) for label, url in p.get('links', []))
+        slides.append(f'''<article class="research-paper" aria-label="{index + 1} of 2" aria-roledescription="slide">
+<a class="research-paper-figure" href="{p['url']}"><img src="{p['image']}" alt="Research overview for {esc(p['title'], quote=True)}" loading="lazy"></a>
+<div class="research-paper-copy"><p class="eyebrow">{esc(p['venue'])}</p><h4><a href="{p['url']}">{esc(p['title'])}</a></h4><p class="publication-authors">{p['authors']}</p><div class="publication-links">{related}</div>{publication_highlights(p)}</div>
+</article>''')
+    return f'''<section class="research-publications" data-publication-carousel role="region" aria-roledescription="carousel" aria-label="Representative publications: {esc(direction, quote=True)}">
+<div class="research-publications-heading"><h3>Representative publications</h3><div class="paper-controls" hidden><button type="button" data-paper-toggle>Pause</button><button type="button" data-paper-prev aria-label="Previous publication">←</button><span class="paper-count" aria-live="off">1 / 2</span><button type="button" data-paper-next aria-label="Next publication">→</button></div></div>
+<div class="research-paper-stage">{''.join(slides)}</div><p class="pub-key"># Equal contribution · * Corresponding author</p>
+</section>'''
+
 SELECTED=[('594872','A shared molecular model of the brain'),('646459','AI agents for spatial biology'),('s41586-023-06569','Mapping the mouse central nervous system at molecular resolution'),('s41467-023-37477','Connecting multimodal views of cells'),('618046','Tracking neural activity over time'),('s41467-021-26044','Identifying cells and tissue structure from spatial gene expression')]
 selected=''
 for key,desc in SELECTED:
@@ -112,7 +132,7 @@ brain_model_path='''<figure class="brain-model-path" aria-labelledby="brain-mode
 for d,l in zip(DIRECTIONS,longs):
  n,slug,title,q,desc,tag,im=d; head,p1,p2,label,projects=l
  model_path=brain_model_path if slug=='brain' else ''
- research+=f'<section class="research-detail wrap" id="{slug}"><div class="detail-aside"><img src="{im}" alt="{FIGURE_ALTS[slug]}" loading="lazy"/></div><div class="detail-body"><h2>{title}</h2><h3>{q}</h3><p>{p1}</p><p>{p2}</p>{model_path}<div class="research-focus"><span class="eyebrow">{label}</span><p>{esc(projects)}</p></div></div></section>'
+ research+=f'<section class="research-detail wrap" id="{slug}"><div class="detail-aside"><img src="{im}" alt="{FIGURE_ALTS[slug]}" loading="lazy"/></div><div class="detail-body"><h2>{title}</h2><h3>{q}</h3><p>{p1}</p><p>{p2}</p>{model_path}<div class="research-focus"><span class="eyebrow">{label}</span><p>{esc(projects)}</p></div></div>{research_publications(slug,title)}</section>'
 research+=f'<section class="wrap simple-cta"><h2>Join our research</h2>{link("join.html","Join the conversation","button primary")}</section>'
 page('about.html','Research','Understanding biological function and disease, the biological basis of intelligence, and AI as a partner in scientific discovery.',research)
 
@@ -159,7 +179,7 @@ join+='''<section class="wrap join-campus" aria-label="Explore the Illinois camp
 <figure><img src="images/uiuc-campus.webp" width="532" height="297" alt="An aerial view of the University of Illinois Urbana-Champaign campus, with leafy walkways, red-brick buildings, and the Main Quad at dusk." decoding="async"><figcaption><a href="https://illinois.edu/">University of Illinois Urbana-Champaign <span aria-hidden="true">↗</span></a></figcaption></figure>
 <figure><img src="images/uiuc-siebel-center.webp" width="1200" height="809" alt="The glass-fronted computer science building at Illinois, with illuminated walkways and a blue evening sky." decoding="async"><figcaption><a href="https://siebelschool.illinois.edu/">Siebel School of Computing and Data Science <span aria-hidden="true">↗</span></a></figcaption></figure>
 </section>'''
-join+=f'''<section class="wrap join-layout" aria-labelledby="opportunities-title"><aside><h2 id="opportunities-title">Research opportunities</h2><p>Email Yichun with the materials below and the questions you would like to explore.</p><nav class="join-section-nav" aria-label="Research opportunity sections"><a href="#postdoctoral">Postdoctoral fellows &amp; scientists</a><a href="#graduate">Graduate students</a><a href="#undergraduate">Undergraduates &amp; interns</a><a href="#visiting">Visiting scholars</a></nav></aside><div class="opportunities">
+join+=f'''<section class="wrap join-layout" aria-labelledby="opportunities-title"><aside><h2 id="opportunities-title">Research opportunities</h2></aside><div class="opportunities">
 <article id="postdoctoral"><h3>Postdoctoral fellows and scientists</h3><p>Send your <strong>CV, representative papers or code, a one-page research statement,</strong> contact details for three references, and preferred start date.</p></article>
 <article id="graduate"><h3>Graduate students</h3><p><strong>Current or admitted Illinois students:</strong> send your CV, program, and a brief summary of your research experience and interests.</p><p><strong>Prospective students:</strong> send your CV, transcripts, and research interests. Apply through the relevant Illinois graduate program.</p>{link('https://siebelschool.illinois.edu/academics/graduate','Graduate admissions')}</article>
 <article id="undergraduate"><h3>Undergraduates and interns</h3><p>Students from Illinois and other institutions are welcome. Send your <strong>CV, interests, relevant coursework, and availability,</strong> plus a project or code sample if available.</p></article>
