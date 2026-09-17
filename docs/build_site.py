@@ -32,7 +32,7 @@ def page(file, title, description, body, home=False):
 <main id="main">{body}</main>
 <footer class="site-footer wrap"><div class="footer-title">He Lab · AI for Biology and Human Intelligence</div>
 <p>Siebel School of Computing and Data Science <br>University of Illinois Urbana-Champaign</p>
-<div class="footer-links"><a href="mailto:{EMAIL}">{EMAIL}</a><a href="https://scholar.google.com/citations?user=LMnJmvIAAAAJ&amp;hl=en">Google Scholar</a><a href="https://github.com/yichunher">GitHub</a><a href="news.html">News</a></div></footer></body></html>'''
+<div class="footer-links"><a href="mailto:{EMAIL}">{EMAIL}</a><a href="https://scholar.google.com/citations?user=LMnJmvIAAAAJ&amp;hl=en">Google Scholar</a><a href="https://github.com/yichunher">GitHub</a></div></footer></body></html>'''
     (ROOT / file).write_text(out)
 
 ARROW='<span aria-hidden="true">↗</span>'
