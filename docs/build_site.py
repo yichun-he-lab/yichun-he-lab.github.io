@@ -104,7 +104,7 @@ for key,desc in SELECTED:
 
 home=f'''
 <section class="home-intro wrap"><h1>AI for Biology and Human Intelligence</h1>
-<p class="home-subtitle">The <strong>He Lab</strong> at the <a href="https://illinois.edu/">University of Illinois Urbana-Champaign</a></p></section>
+<p class="home-subtitle">The <strong>He Lab</strong> at the University of Illinois Urbana-Champaign</p></section>
 <section class="home-research wrap" id="research"><h2>Research</h2>
 <div class="research-intro"><p>We develop AI to understand how biological changes shape human health and intelligence, and to guide ways of improving both.</p><p>Our research connects molecular and cellular mechanisms to organ function, brain dynamics, and cognition through models whose predictions can be tested experimentally.</p></div>
 <div class="directions">{research_cards}</div>
