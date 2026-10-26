@@ -1,47 +1,18 @@
 {
   "publications": [
     {
-      "url": "https://www.nature.com/articles/s41586-025-09106-8",
-      "image": "images/embryo.png",
-      "title": "Brain implantation of tissue-level-soft bioelectronics via embryonic development",
-      "authors": "Hao Sheng#, Ren Liu#, Qiang Li#, Zuwan Lin#, <strong>Yichun He</strong>, Thomas Blum, Hao Zhao, Xin Tang, Wenbo Wang, Lishuai Jin, Zheliang Wang, Emma Hsiao, Paul Le Floch, Hao Shen, Ariel J. Lee, Rachael Alice Jonas-Closs, James Briggs, Siyi Liu, Daniel Solomon, Xiao Wang, Nanshu Lu, and Jia Liu*",
-      "venue": "Nature, 2025",
-      "year": "2025",
-      "highlights": [
-        {
-          "text": "Cover highlight · Nature"
-        }
-      ]
-    },
-    {
       "url": "https://www.biorxiv.org/content/10.1101/2025.04.03.646459v1",
       "image": "images/SpatialAgent.png",
       "title": "SpatialAgent: An Autonomous AI Agent for Spatial Biology",
       "authors": "Hanchen Wang#*, <strong>Yichun He</strong>#, Paula Coelho#, Matthew Bucci#, Abbas Nazir, Bob Chen, Linh Trinh, Serena Zhang, Kexin Huang, Vineethkrishna Chandrasekar, Douglas C. Chung, Minsheng Hao, Ana Carolina Leote, Yongju Lee, Bo Li, Tianyu Liu, Jin Liu, Romain Lopez, Lucas Tawaun, Mingyu Ma, Nikita Makarov, Lisa McGinnis, Linna Peng, Stephen Ra, Gabriele Scalia, Avtar Singh, Liming Tao, Masatoshi Uehara, Chenyu Wang, Runmin Wei, Ryan Copping, Orit Rozenblatt-Rosen, Jure Leskovec, Aviv Regev*",
-      "venue": "bioRxiv, 2025",
-      "year": "2025",
+      "venue": "Nature Computational Science · Accepted",
+      "year": "2026",
       "links": [
         [
           "SpatialAgent code",
           "https://github.com/Genentech/SpatialAgent"
         ]
       ]
-    },
-    {
-      "url": "https://www.biorxiv.org/content/10.1101/2025.04.01.646731v1",
-      "image": "images/STAgent.png",
-      "title": "Spatial transcriptomics AI agent charts hPSC-pancreas maturation in vivo",
-      "authors": "Zuwan Lin#, Wenbo Wang#, Arnau Marin-Llobet, Qiang Li, Samuel D. Pollock, Xin Sui, Almir Aljovic, Jaeyong Lee, Jongmin Baek, Ningyue Liang, Xinhe Zhang, Connie Kangni Wang, Jiahao Huang, Mai Liu, Zihan Gao, Hao Sheng, Jin Du, Stephen J Lee, Brandon Wang, <strong>Yichun He</strong>, Jie Ding, Xiao Wang, Juan R Alvarez*, Jia Liu*",
-      "venue": "bioRxiv, 2025",
-      "year": "2025"
-    },
-    {
-      "url": "https://www.biorxiv.org/content/10.1101/2025.02.11.637754v1",
-      "image": "images/SpikeAgent.png",
-      "title": "Spike sorting AI agent",
-      "authors": "Zuwan Lin#, Arnau Marin-Llobet#, Jongmin Baek, <strong>Yichun He</strong>, Jaeyong Lee, Wenbo Wang, Xinhe Zhang, Ariel J. Lee, Ningyue Liang, Jin Du, Jie Ding, Na Li, Jia Liu*",
-      "venue": "Nature Neuroscience · Accepted",
-      "year": "2025"
     },
     {
       "url": "https://www.biorxiv.org/content/10.1101/2024.05.27.594872v1",
@@ -63,6 +34,35 @@
           "Documentation",
           "https://fusemap.readthedocs.io/en/latest/"
         ]
+      ]
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2025.02.11.637754v1",
+      "image": "images/SpikeAgent.png",
+      "title": "Spike sorting AI agent",
+      "authors": "Zuwan Lin#, Arnau Marin-Llobet#, Jongmin Baek, <strong>Yichun He</strong>, Jaeyong Lee, Wenbo Wang, Xinhe Zhang, Ariel J. Lee, Ningyue Liang, Jin Du, Jie Ding, Na Li, Jia Liu*",
+      "venue": "Nature Neuroscience · Accepted, 2026",
+      "year": "2026"
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.01.646731v1",
+      "image": "images/STAgent.png",
+      "title": "Spatial transcriptomics AI agent charts hPSC-pancreas maturation in vivo",
+      "authors": "Wenbo Wang#, Zuwan Lin#, Arnau Marin-Llobet, Qiang Li, Samuel Pollock, Xin Sui, Yaxuan Liu, Simran Swain, Mai Liu, Zihan Gao, Sam Preza, Almir Aljovic, Jaeyong Lee, Jongmin Baek, Ningyue Liang, Xinhe Zhang, Connie Kangni Wang, Jiahao Huang, Hao Sheng, Jin Du, Stephen Lee, Brandon Wang, <strong>Yichun He</strong>, Sunny Shulei Peng, Chrystal Duan, Jie Ding, Xiao Wang, Juan Alvarez-Dominguez*, Jia Liu*",
+      "venue": "Nature Methods · Accepted, 2026",
+      "year": "2026"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-025-09106-8",
+      "image": "images/embryo.png",
+      "title": "Brain implantation of tissue-level-soft bioelectronics via embryonic development",
+      "authors": "Hao Sheng#, Ren Liu#, Qiang Li#, Zuwan Lin#, <strong>Yichun He</strong>, Thomas Blum, Hao Zhao, Xin Tang, Wenbo Wang, Lishuai Jin, Zheliang Wang, Emma Hsiao, Paul Le Floch, Hao Shen, Ariel J. Lee, Rachael Alice Jonas-Closs, James Briggs, Siyi Liu, Daniel Solomon, Xiao Wang, Nanshu Lu, and Jia Liu*",
+      "venue": "Nature, 2025",
+      "year": "2025",
+      "highlights": [
+        {
+          "text": "Cover highlight · Nature"
+        }
       ]
     },
     {
