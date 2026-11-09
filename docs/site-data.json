@@ -13,7 +13,7 @@
           "https://github.com/Genentech/SpatialAgent"
         ]
       ],
-      "thumbnail": "images/publication-icons/spatial-agent.svg"
+      "thumbnail": "images/publication-art/spatial-agent.webp"
     },
     {
       "url": "https://www.biorxiv.org/content/10.1101/2024.05.27.594872v1",
@@ -36,7 +36,7 @@
           "https://fusemap.readthedocs.io/en/latest/"
         ]
       ],
-      "thumbnail": "images/publication-icons/brain-foundation.svg"
+      "thumbnail": "images/publication-art/brain-foundation.webp"
     },
     {
       "url": "",
@@ -45,7 +45,7 @@
       "authors": "Hufeng Zhou#, Sidharth Raghavan#, Sarthak Tiwari#, Zhiyuan Chu#, Karthik Guruvayurappan#, Revathy Venukuttan#, Ellie Haber#, Ann Le#, Zhaowei Han#, Zheyu Zhang#, Ayan Paul#, <strong>Yichun He</strong>, Rithvik Katikaneni, Daofeng Li, Xihao Li, Shane Liu, Xingxin Pan, Vineet Verma, Yang Yang, Yang Zhang, Junhao Zhu, Thomas Norman, Shannon Clarke, Mark Gerstein, C. David Page, Predrag Radivojac, Nidhi Sahni, The CAMP Working Group of the IGVF Consortium, Jie Liu*, Jian Ma*, Xihong Lin*, S. Stephen Yi*, Kushal K. Dey*, William H. Majoros*",
       "venue": "Nature Genetics · Accepted, 2026",
       "year": "2026",
-      "thumbnail": "images/publication-icons/generative-genomics.svg"
+      "thumbnail": "images/publication-art/generative-genomics.webp"
     },
     {
       "url": "https://www.biorxiv.org/content/10.1101/2025.02.11.637754v1",
@@ -54,7 +54,7 @@
       "authors": "Zuwan Lin#, Arnau Marin-Llobet#, Jongmin Baek, <strong>Yichun He</strong>, Jaeyong Lee, Wenbo Wang, Xinhe Zhang, Ariel J. Lee, Ningyue Liang, Jin Du, Jie Ding, Na Li, Jia Liu*",
       "venue": "Nature Neuroscience · Accepted, 2026",
       "year": "2026",
-      "thumbnail": "images/publication-icons/spike-agent.svg"
+      "thumbnail": "images/publication-art/spike-agent.webp"
     },
     {
       "url": "https://www.biorxiv.org/content/10.1101/2025.04.01.646731v1",
@@ -63,7 +63,7 @@
       "authors": "Wenbo Wang#, Zuwan Lin#, Arnau Marin-Llobet, Qiang Li, Samuel Pollock, Xin Sui, Yaxuan Liu, Simran Swain, Mai Liu, Zihan Gao, Sam Preza, Almir Aljovic, Jaeyong Lee, Jongmin Baek, Ningyue Liang, Xinhe Zhang, Connie Kangni Wang, Jiahao Huang, Hao Sheng, Jin Du, Stephen Lee, Brandon Wang, <strong>Yichun He</strong>, Sunny Shulei Peng, Chrystal Duan, Jie Ding, Xiao Wang, Juan Alvarez-Dominguez*, Jia Liu*",
       "venue": "Nature Methods · Accepted, 2026",
       "year": "2026",
-      "thumbnail": "images/publication-icons/pancreas.svg"
+      "thumbnail": "images/publication-art/pancreas.webp"
     },
     {
       "url": "https://www.nature.com/articles/s41586-025-09106-8",
@@ -77,7 +77,7 @@
           "text": "Cover highlight · Nature"
         }
       ],
-      "thumbnail": "images/publication-icons/embryonic-bioelectronics.svg"
+      "thumbnail": "images/publication-art/embryonic-bioelectronics.webp"
     },
     {
       "url": "https://doi.org/10.1038/s41592-025-02867-0",
@@ -86,7 +86,7 @@
       "authors": "Xin Sui#, Jennifer A. Lo#, Shuchen Luo, <strong>Yichun He</strong>, Zefang Tang, Zuwan Lin,Yiming Zhou, Wendy Xueyi Wang, Jia Liu, Xiao Wang*",
       "venue": "Nature Methods, 2025",
       "year": "2025",
-      "thumbnail": "images/publication-icons/tissue-3d.svg"
+      "thumbnail": "images/publication-art/tissue-3d.webp"
     },
     {
       "url": "https://www.biorxiv.org/content/10.1101/2024.10.14.618046v1",
@@ -105,7 +105,7 @@
           "https://autosort.readthedocs.io/en/latest/"
         ]
       ],
-      "thumbnail": "images/publication-icons/neural-decoding.svg"
+      "thumbnail": "images/publication-art/neural-decoding.webp"
     },
     {
       "url": "https://arxiv.org/abs/2410.13643",
@@ -114,7 +114,7 @@
       "authors": "Chenyu Wang#, Masatoshi Uehara#, <strong>Yichun He</strong>, Amy Wang, Tommaso Biancalani, Avantika Lal, Tommi Jaakkola*, Sergey Levine*, Hanchen Wang*, Aviv Regev*",
       "venue": "ICLR, 2025",
       "year": "2025",
-      "thumbnail": "images/publication-icons/sequence-design.svg"
+      "thumbnail": "images/publication-art/sequence-design.webp"
     },
     {
       "url": "https://www.nature.com/articles/s41586-023-06569-5",
@@ -139,7 +139,7 @@
           "url": "https://brain.harvard.edu/hbi_news/google-map-of-mouse-brain-at-molecular-resolution/"
         }
       ],
-      "thumbnail": "images/publication-icons/brain-atlas.svg"
+      "thumbnail": "images/publication-art/brain-atlas.webp"
     },
     {
       "url": "https://www.cell.com/cell/abstract/S0092-8674(22)01586-0",
@@ -148,7 +148,7 @@
       "authors": "Giridhar M. Anand, Heitor C. Megale, Sean H. Murphy, Theresa Weis, Zuwan Lin, <strong>Yichun He</strong>, Xiao Wang, Jia Liu, Sharad Ramanathan*",
       "venue": "Cell, 2023",
       "year": "2023",
-      "thumbnail": "images/publication-icons/organoid.svg"
+      "thumbnail": "images/publication-art/organoid.webp"
     },
     {
       "url": "https://www.nature.com/articles/s41592-023-01829-8",
@@ -157,7 +157,7 @@
       "authors": "Jingyi Ren#, Haowen Zhou#, Hu Zeng#, Connie Kangni Wang, Jiahao Huang, Xiaojie Qiu, Xin Sui, Qiang Li, Xunwei Wu, Zuwan Lin, Jennifer A. Lo, Kamal Maher, <strong>Yichun He</strong>, Xin Tang, Judson Lam, Hongyu Chen, Brian Li, David E. Fisher, Jia Liu &amp; Xiao Wang*",
       "venue": "Nature Methods, 2023",
       "year": "2023",
-      "thumbnail": "images/publication-icons/rna-dynamics.svg"
+      "thumbnail": "images/publication-art/rna-dynamics.webp"
     },
     {
       "url": "https://www.nature.com/articles/s41467-023-37477-x",
@@ -178,7 +178,7 @@
           "url": "https://www.nature.com/subjects/computational-science/ncomms"
         }
       ],
-      "thumbnail": "images/publication-icons/multimodal-learning.svg"
+      "thumbnail": "images/publication-art/multimodal-learning.webp"
     },
     {
       "url": "https://www.cell.com/cell/abstract/S0092-8674(23)00286-6",
@@ -196,7 +196,7 @@
           "url": "https://www.nature.com/articles/s41592-023-01922-y"
         }
       ],
-      "thumbnail": "images/publication-icons/electro-seq.svg"
+      "thumbnail": "images/publication-art/electro-seq.webp"
     },
     {
       "url": "https://www.nature.com/articles/s41467-021-26044-x",
@@ -217,7 +217,7 @@
           "url": "https://seas.harvard.edu/news/2021/12/mapping-rnas"
         }
       ],
-      "thumbnail": "images/publication-icons/spatial-clusters.svg"
+      "thumbnail": "images/publication-art/spatial-clusters.webp"
     },
     {
       "url": "https://pubs.aip.org/aip/bpr/article/3/1/011301/2835528/Soft-bioelectronics-for-cardiac-interfaces",
@@ -232,7 +232,7 @@
           "url": "https://pubs.aip.org/aip/sci/article/2022/2/021107/2848894/Flexible-and-stretchable-bioelectronics-inform"
         }
       ],
-      "thumbnail": "images/publication-icons/cardiac-interfaces.svg"
+      "thumbnail": "images/publication-art/cardiac-interfaces.webp"
     }
   ]
 }
