@@ -37,6 +37,14 @@
       ]
     },
     {
+      "url": "",
+      "image": "",
+      "title": "The emerging role of generative AI in functional genomics",
+      "authors": "Hufeng Zhou#, Sidharth Raghavan#, Sarthak Tiwari#, Zhiyuan Chu#, Karthik Guruvayurappan#, Revathy Venukuttan#, Ellie Haber#, Ann Le#, Zhaowei Han#, Zheyu Zhang#, Ayan Paul#, <strong>Yichun He</strong>, Rithvik Katikaneni, Daofeng Li, Xihao Li, Shane Liu, Xingxin Pan, Vineet Verma, Yang Yang, Yang Zhang, Junhao Zhu, Thomas Norman, Shannon Clarke, Mark Gerstein, C. David Page, Predrag Radivojac, Nidhi Sahni, The CAMP Working Group of the IGVF Consortium, Jie Liu*, Jian Ma*, Xihong Lin*, S. Stephen Yi*, Kushal K. Dey*, William H. Majoros*",
+      "venue": "Nature Genetics · Accepted, 2026",
+      "year": "2026"
+    },
+    {
       "url": "https://www.biorxiv.org/content/10.1101/2025.02.11.637754v1",
       "image": "images/SpikeAgent.png",
       "title": "Spike sorting AI agent",
