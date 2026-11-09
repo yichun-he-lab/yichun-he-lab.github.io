@@ -199,7 +199,8 @@ for year in sorted(set(p['year'] for p in DATA['publications']),reverse=True):
   venue=p['venue'].replace(' (listed in 2025 CV entry)','')
   related=''.join(link(url,label) for label,url in p.get('links',[]))
   highlights=publication_highlights(p)
-  image=f'<div class="publication-img"><img src="{p["image"]}" alt="" loading="lazy"></div>' if p.get('image') else '<div class="publication-img" aria-hidden="true"></div>'
+  thumbnail=p.get("thumbnail") or p.get("image")
+  image=f'<div class="publication-img"><img src="{thumbnail}" alt="" width="200" height="200" loading="lazy"></div>' if thumbnail else '<div class="publication-img" aria-hidden="true"></div>'
   title=f'<a href="{p["url"]}">{esc(p["title"])}</a>' if p.get('url') else esc(p['title'])
   arrow=f'<a class="paper-arrow" href="{p["url"]}" aria-label="Read {esc(p["title"])}">↗</a>' if p.get('url') else ''
   pubs+=f'<article class="publication">{image}<div class="publication-content"><p class="eyebrow">{venue}</p><h3>{title}</h3><p class="publication-authors">{p["authors"]}</p><div class="publication-links">{related}</div>{highlights}</div>{arrow}</article>'
