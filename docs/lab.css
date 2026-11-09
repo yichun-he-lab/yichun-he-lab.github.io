@@ -60,7 +60,7 @@ a:hover {text-decoration:underline;text-underline-offset:3px}
 img {display:block;max-width:100%;height:auto}
 button {font:inherit}
 a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
-.wrap {width:min(1024px,calc(100% - 60px));margin-inline:auto}
+.wrap {width:min(1152px,calc(100% - 48px));margin-inline:auto}
 .skip-link {position:fixed;top:-70px;left:15px;padding:10px;background:#111;color:#fff;z-index:100}
 .skip-link:focus {top:10px}
 .site-header {position:fixed;inset:0 0 auto;z-index:20;background:rgba(255,255,255,.97)}
@@ -126,7 +126,7 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 .progress-venue {display:block;color:var(--muted);margin-top:5px}
 .progress-row:hover {text-decoration:none}
 .progress-row:hover h3 {text-decoration:underline;text-underline-offset:3px}
-.home-join {padding-top:70px;max-width:1024px}
+.home-join {padding-top:70px;max-width:1152px}
 .home-join>p {max-width:830px}
 .site-footer {margin-top:100px;padding:20px 0 65px;border-top:1px solid var(--line)}
 .footer-title {margin-bottom:8px}
@@ -239,8 +239,8 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 .pub-key {color:var(--muted);margin-bottom:20px}
 .publication-year-header {padding-top:25px;text-align:right}
 .publication {display:flex;gap:20px;align-items:start;padding:23px 0;border-bottom:1px solid var(--line)}
-.publication-img {flex:0 0 160px;margin-top:6px}
-.publication-img img {display:block;width:160px;height:160px;object-fit:cover;border-radius:3px}
+.publication-img {flex:0 0 200px;margin-top:6px}
+.publication-img img {display:block;width:200px;height:200px;object-fit:cover;border-radius:3px}
 .publication-content {flex:1;min-width:0}
 .publication h3 {margin-top:6px}
 .publication .eyebrow {letter-spacing:normal;text-transform:none}
@@ -265,6 +265,8 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
  #hamburger {display:block}
 }
 @media(max-width:800px) {
+ .publication-img {flex-basis:160px}
+ .publication-img img {width:160px;height:160px}
  .nav-inner {padding-inline:24px}
  .directions {gap:24px}
  .research-detail {grid-template-columns:220px 1fr;gap:30px}
@@ -316,9 +318,9 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
  .section {padding-top:45px}
  .principles {grid-template-columns:1fr;gap:26px}
  .publication {gap:14px;flex-wrap:wrap}
- .publication-img {flex:0 0 72px;margin-top:0}
- .publication-img img {width:72px;height:72px;border-radius:2px}
- .publication-content {flex-basis:calc(100% - 86px)}
+ .publication-img {flex:0 0 88px;margin-top:0}
+ .publication-img img {width:88px;height:88px;border-radius:2px}
+ .publication-content {flex-basis:calc(100% - 102px)}
  .publication-year-header {text-align:left}
  .news-item {grid-template-columns:1fr;gap:10px}
 }
