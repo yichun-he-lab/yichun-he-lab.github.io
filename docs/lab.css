@@ -136,8 +136,8 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 .eyebrow {letter-spacing:.03em;color:var(--muted)}
 .research-detail {display:grid;grid-template-columns:300px 1fr;gap:60px;margin-top:55px;padding-bottom:50px;border-bottom:1px solid var(--line)}
 .detail-aside img {width:100%;aspect-ratio:1;object-fit:contain}
-.research-publications {grid-column:1/-1;min-width:0;border-top:1px solid var(--line);padding-top:28px}
-.research-publications-heading {display:flex;align-items:center;justify-content:flex-end;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.research-publications {grid-column:1/-1;min-width:0;border:1px solid #171717;padding:24px}
+.research-publications-heading {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap}
 .paper-controls {display:flex;align-items:center;gap:10px}
 .paper-controls[hidden] {display:none}
 .paper-controls button {font:inherit;font-size:var(--small);color:inherit;background:#fff;border:1px solid var(--line);border-radius:3px;min-width:44px;min-height:44px;padding:8px 12px;cursor:pointer}
@@ -325,3 +325,15 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
  .news-item {grid-template-columns:1fr;gap:10px}
 }
 @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto}}
+
+/* Related papers and full, uncropped schematics. */
+.research-publications-heading h3 {margin:0;font-size:var(--subheading);line-height:1.3}
+.publication.has-schematic {flex-wrap:wrap}
+.publication-schematic {flex:0 0 100%;min-width:0;margin:12px 0 8px}
+.publication-schematic a {display:block;width:fit-content;max-width:100%;margin:0 auto}
+.publication-schematic img {display:block;width:auto;height:auto;max-width:min(100%,600px);max-height:460px;object-fit:contain}
+@media(max-width:600px) {
+ .research-publications {padding:18px 14px}
+ .research-publications-heading {gap:12px}
+ .publication-schematic {margin-top:8px}
+}
