@@ -91,8 +91,8 @@ def research_publications(slug, direction):
 <a class="research-paper-figure" href="{p['url']}"><img src="{p['image']}" alt="Research overview for {esc(p['title'], quote=True)}" loading="lazy"></a>
 <div class="research-paper-copy"><p class="eyebrow">{esc(p['venue'])}</p><h4><a href="{p['url']}">{esc(p['title'])}</a></h4><p class="publication-authors">{p['authors']}</p><div class="publication-links">{related}</div>{publication_highlights(p)}</div>
 </article>''')
-    return f'''<section class="research-publications" data-publication-carousel role="region" aria-roledescription="carousel" aria-label="Representative publications: {esc(direction, quote=True)}">
-<div class="research-publications-heading"><div class="paper-controls" hidden><button type="button" data-paper-toggle>Pause</button><button type="button" data-paper-prev aria-label="Previous publication">←</button><span class="paper-count" aria-live="off">1 / 2</span><button type="button" data-paper-next aria-label="Next publication">→</button></div></div>
+    return f'''<section class="research-publications" data-publication-carousel role="region" aria-roledescription="carousel" aria-labelledby="{slug}-related-title">
+<div class="research-publications-heading"><h3 id="{slug}-related-title">Related work</h3><div class="paper-controls" hidden><button type="button" data-paper-toggle>Pause</button><button type="button" data-paper-prev aria-label="Previous publication">←</button><span class="paper-count" aria-live="off">1 / 2</span><button type="button" data-paper-next aria-label="Next publication">→</button></div></div>
 <div class="research-paper-stage">{''.join(slides)}</div>
 </section>'''
 
@@ -191,6 +191,15 @@ join+=f'''<section class="wrap join-layout" aria-labelledby="opportunities-title
 </section>'''
 page('join.html','Join us','Explore research opportunities and collaborations with He Lab, launching at Illinois in 2027.',join)
 
+PUBLICATION_SCHEMATICS = {
+ 'SpatialAgent.png': 'SpatialAgent schematic showing observation, hypothesis, experiment, memory, planning, and analysis tools.',
+ 'fusemap.png': 'FuseMap schematic connecting heterogeneous spatial brain atlases into a universal spatial brain model.',
+ 'FeatureImage-01.png': 'ClusterMap schematic showing gene spots, cell segmentation, cell types, and tissue regions.',
+ 'GraphicAbstract_v2.jpg': 'Brain atlas graphical abstract showing molecular cell types, brain regions, and spatial organization.',
+ 'Autosort.png': 'AutoSort schematic showing long-term electrophysiology, offline model training, and online spike sorting.',
+ 'unitednet.png': 'UnitedNet schematic showing multimodal encoding, cross-modal prediction, and joint cell group identification.',
+}
+
 pubs=intro('PUBLICATIONS','The work behind <br><em>the questions.</em>','Selected publications and preprints by Yichun He and collaborators, including work completed before the launch of He Lab.')
 pubs+='<section class="wrap publication-list"><p class="pub-key"># Equal contribution · * Corresponding author</p>'
 for year in sorted(set(p['year'] for p in DATA['publications']),reverse=True):
@@ -203,7 +212,13 @@ for year in sorted(set(p['year'] for p in DATA['publications']),reverse=True):
   image=f'<div class="publication-img"><img src="{thumbnail}" alt="" width="200" height="200" loading="lazy"></div>' if thumbnail else '<div class="publication-img" aria-hidden="true"></div>'
   title=f'<a href="{p["url"]}">{esc(p["title"])}</a>' if p.get('url') else esc(p['title'])
   arrow=f'<a class="paper-arrow" href="{p["url"]}" aria-label="Read {esc(p["title"])}">↗</a>' if p.get('url') else ''
-  pubs+=f'<article class="publication">{image}<div class="publication-content"><p class="eyebrow">{venue}</p><h3>{title}</h3><p class="publication-authors">{p["authors"]}</p><div class="publication-links">{related}</div>{highlights}</div>{arrow}</article>'
+  schematic_name=Path(p.get('image', '')).name
+  schematic_alt=PUBLICATION_SCHEMATICS.get(schematic_name)
+  schematic_sizes={'SpatialAgent.png':(705,536),'fusemap.png':(2300,1876),'FeatureImage-01.png':(5000,2813),'GraphicAbstract_v2.jpg':(2509,2117),'Autosort.png':(5100,2850),'unitednet.png':(1300,716)}
+  schematic_width,schematic_height=schematic_sizes.get(schematic_name,(1,1))
+  schematic=f'<figure class="publication-schematic"><a href="{p["image"]}" aria-label="View full schematic for {esc(p["title"], quote=True)}"><img src="{p["image"]}" alt="{esc(schematic_alt, quote=True)}" width="{schematic_width}" height="{schematic_height}" loading="lazy"></a></figure>' if schematic_alt else ''
+  publication_class='publication has-schematic' if schematic_alt else 'publication'
+  pubs+=f'<article class="{publication_class}">{image}<div class="publication-content"><p class="eyebrow">{venue}</p><h3>{title}</h3><p class="publication-authors">{p["authors"]}</p><div class="publication-links">{related}</div>{highlights}</div>{arrow}{schematic}</article>'
 pubs+='</section>'
 page('publications.html','Publications','Selected scientific publications and preprints by Yichun He and collaborators.',pubs)
 
