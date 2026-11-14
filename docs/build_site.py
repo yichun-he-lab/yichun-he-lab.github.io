@@ -201,24 +201,23 @@ PUBLICATION_SCHEMATICS = {
 }
 
 pubs=intro('PUBLICATIONS','The work behind <br><em>the questions.</em>','Selected publications and preprints by Yichun He and collaborators, including work completed before the launch of He Lab.')
-pubs+='<section class="wrap publication-list"><p class="pub-key"># Equal contribution · * Corresponding author</p>'
+pubs+='<section class="wrap publication-list publication-list-editorial"><p class="pub-key"># Equal contribution · * Corresponding author</p>'
 for year in sorted(set(p['year'] for p in DATA['publications']),reverse=True):
  pubs+=f'<h2 class="publication-year-header">{year}</h2>'
  for p in [p for p in DATA['publications'] if p['year']==year]:
   venue=p['venue'].replace(' (listed in 2025 CV entry)','')
   related=''.join(link(url,label) for label,url in p.get('links',[]))
   highlights=publication_highlights(p)
-  thumbnail=p.get("thumbnail") or p.get("image")
-  image=f'<div class="publication-img"><img src="{thumbnail}" alt="" width="200" height="200" loading="lazy"></div>' if thumbnail else '<div class="publication-img" aria-hidden="true"></div>'
   title=f'<a href="{p["url"]}">{esc(p["title"])}</a>' if p.get('url') else esc(p['title'])
-  arrow=f'<a class="paper-arrow" href="{p["url"]}" aria-label="Read {esc(p["title"])}">↗</a>' if p.get('url') else ''
+  citation_links=([('Full text',p['url'])] if p.get('url') else [])+p.get('links',[])
+  related=' '.join(f'<a class="citation-link" href="{esc(url, quote=True)}">[{esc(label)}]</a>' for label,url in citation_links)
   schematic_name=Path(p.get('image', '')).name
   schematic_alt=PUBLICATION_SCHEMATICS.get(schematic_name)
   schematic_sizes={'SpatialAgent.png':(705,536),'fusemap.png':(2300,1876),'FeatureImage-01.png':(5000,2813),'GraphicAbstract_v2.jpg':(2509,2117),'Autosort.png':(5100,2850),'unitednet.png':(1300,716)}
   schematic_width,schematic_height=schematic_sizes.get(schematic_name,(1,1))
   schematic=f'<figure class="publication-schematic"><a href="{p["image"]}" aria-label="View full schematic for {esc(p["title"], quote=True)}"><img src="{p["image"]}" alt="{esc(schematic_alt, quote=True)}" width="{schematic_width}" height="{schematic_height}" loading="lazy"></a></figure>' if schematic_alt else ''
   publication_class='publication has-schematic' if schematic_alt else 'publication'
-  pubs+=f'<article class="{publication_class}">{image}<div class="publication-content"><p class="eyebrow">{venue}</p><h3>{title}</h3><p class="publication-authors">{p["authors"]}</p><div class="publication-links">{related}</div>{highlights}</div>{arrow}{schematic}</article>'
+  pubs+=f'<article class="{publication_class}"><p class="publication-citation"><span class="citation-authors">{p["authors"]}</span>. <strong class="citation-title">{title}</strong>. <em class="citation-venue">{esc(venue)}</em>. {related}</p>{highlights}{schematic}</article>'
 pubs+='</section>'
 page('publications.html','Publications','Selected scientific publications and preprints by Yichun He and collaborators.',pubs)
 
