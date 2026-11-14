@@ -200,7 +200,7 @@ PUBLICATION_SCHEMATICS = {
  'unitednet.png': 'UnitedNet schematic showing multimodal encoding, cross-modal prediction, and joint cell group identification.',
 }
 
-pubs=intro('PUBLICATIONS','The work behind <br><em>the questions.</em>','Selected publications and preprints by Yichun He and collaborators, including work completed before the launch of He Lab.')
+pubs='<section class="page-intro wrap"><h1>Publications</h1></section>'
 pubs+='<section class="wrap publication-list publication-list-editorial"><p class="pub-key"># Equal contribution · * Corresponding author</p>'
 for year in sorted(set(p['year'] for p in DATA['publications']),reverse=True):
  pubs+=f'<h2 class="publication-year-header">{year}</h2>'
