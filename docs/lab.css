@@ -340,10 +340,10 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 
 /* Quiet, single-column bibliography with supporting figures. */
 .publication-list-editorial {max-width:900px}
-.publication-list-editorial .publication-year-header {text-align:left;font-family:var(--sans);font-size:25px;font-weight:700;padding-top:30px;margin:35px 0 18px;border-top:1px solid var(--line)}
+.publication-list-editorial .publication-year-header {text-align:left;font-family:var(--serif);font-size:var(--section);font-weight:400;padding-top:30px;margin:35px 0 18px;border-top:1px solid var(--line)}
 .publication-list-editorial .pub-key + .publication-year-header {margin-top:0;border-top:0;padding-top:12px}
 .publication-list-editorial .publication {display:block;padding:0;margin:0 0 30px;border:0}
-.publication-citation {font-family:var(--sans);font-size:15px;line-height:1.85;color:#4b4b4b;margin:0}
+.publication-citation {font-family:var(--sans);font-size:16px;line-height:1.85;color:#4b4b4b;margin:0}
 .citation-title {font-weight:700;color:#222}
 .citation-title a {text-decoration:none}
 .citation-title a:hover {text-decoration:underline;text-underline-offset:3px}
@@ -353,7 +353,7 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 .publication-list-editorial .publication-schematic a {width:100%;margin:0;max-width:600px}
 .publication-list-editorial .publication-schematic img {width:100%;height:auto;max-width:100%;max-height:400px;object-fit:contain;object-position:left center}
 @media(max-width:600px) {
- .publication-citation {font-size:14px;line-height:1.8}
- .publication-list-editorial .publication-year-header {font-size:23px}
+ .publication-citation {font-size:16px;line-height:1.8}
+ .publication-list-editorial .publication-year-header {font-size:var(--section)}
  .publication-list-editorial .publication-schematic {margin:18px 0 26px}
 }
