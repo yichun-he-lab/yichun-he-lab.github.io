@@ -339,7 +339,7 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
 }
 
 /* Quiet, single-column bibliography with supporting figures. */
-.publication-list-editorial {max-width:900px}
+.publication-list-editorial {max-width:none}
 .publication-list-editorial .publication-year-header {text-align:left;font-family:var(--serif);font-size:var(--section);font-weight:400;padding-top:30px;margin:35px 0 18px;border-top:1px solid var(--line)}
 .publication-list-editorial .pub-key + .publication-year-header {margin-top:0;border-top:0;padding-top:12px}
 .publication-list-editorial .publication {display:block;padding:0;margin:0 0 30px;border:0}
@@ -357,3 +357,7 @@ a:focus-visible,button:focus-visible {outline:2px solid #444;outline-offset:5px}
  .publication-list-editorial .publication-year-header {font-size:var(--section)}
  .publication-list-editorial .publication-schematic {margin:18px 0 26px}
 }
+
+/* Align the Research introduction and framework caption with the diagram. */
+body:has(#research-framework-title) .page-deck,
+.research-framework[aria-labelledby="research-framework-title"] figcaption > p {max-width:none}
